@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height,Width,Border,Background</title>
+    <style>
+        #firstPara{
+            background-color: rgb(100, 200, 150);
+            height: 50px; /* Here we are setting the height of the background*/
+            width: 200px; /* Here we are setting the width of the background*/
+            border-width: 4px;
+            border-color: red;
+            border-style:solid;
+            /* This can be written as */
+            border: 4px dashed yellow;
+            border-radius: 10px;
+        }
+        #secondPara{
+            color: rgba(0, 255, 200, 0.693);
+            background-color: lightslategray;
+            height: 50px;
+            width: 200px;
+            border-top: 6px dashed violet;
+            border-bottom: 3px dotted indigo;
+            border-left: 10px solid blue;
+            border-right: 15px solid green;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 40px;
+        }
+        #thirdPara{
+            background-color: darkorange;
+            color: honeydew;
+            height: 500px;
+            width: 500px;
+            background-image: url(https://media.istockphoto.com/id/483724081/photo/yosemite-valley-landscape-and-river-california.jpg?s=612x612&w=0&k=20&c=QQ7rvq0Qbfpkug1Wbd36PGqkOntoPFKWxiE4w4tV-NE=);
+            border: 10px solid pink;
+            background-repeat:no-repeat; /* It decides the repetition of the BG images*/
+            background-position: center center; /* It decides the position of the image*/
+        }
+    </style>
+</head>
+<body>
+    <h1>This is my first Heading</h1>
+    <p id="firstPara">This is my first Paragraph</p>
+    <h2>This is my first Heading</h2>
+    <p id="secondPara">This is my second Paragraph</p>
+    <h3>This is my first Heading</h3>
+    <p id="thirdPara">This is my third Paragraph</p>
+</body>
+</html>

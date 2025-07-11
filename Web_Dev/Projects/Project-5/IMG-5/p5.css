@@ -1,0 +1,118 @@
+/* CSS Reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+hr{
+    border: 2px solid black;
+}
+
+/* Logo */
+
+#logo img{
+    height: 75px;
+}
+
+/* Navigation Bar */
+
+#navigation_bar{
+    display: flex;
+    background-color: black;
+    height: 75px;
+}
+#navigation_bar ul{
+    display: flex;
+    margin: 15px;
+    font-size: 1.3rem;
+}
+#navigation_bar ul li{
+    list-style: none;
+    margin: 0px 5px 0px 5px;
+    padding: 10px;
+}
+#navigation_bar ul li a{
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    color: white;
+}
+#navigation_bar ul li a:hover{
+    background-color: burlywood;
+    color:black;
+    border-radius: 5px;
+}
+
+/* Search Bar */
+
+#search-box input{
+    border: 2px solid burlywood;
+    margin: 15px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+}
+.h-secondary{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: rgb(235, 133, 0);
+}
+.center{
+    text-align: center;
+}
+.left{
+    text-align: left;
+}
+.para{
+    font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+/* Section-1 */
+
+.section{
+    margin: 50px 100px 55px 150px;
+    /* border: 2px solid green; */
+}
+#sec-1 h1{
+    margin: 25px;
+}
+#sec-1 p{
+    margin: 25px 0px 25px 0px;
+    text-align: justify;
+}
+
+/* Section-2 */
+
+.box{
+    border: 2px solid red;
+    margin: 10px;
+}
+.div{
+    display: flex;
+    width: 400px;
+    height: 400px;
+}
+#sec-2 img{
+    height: 150px;
+    margin-left: 35px;
+}
+#sec-3 img{
+    height: 150px;
+    margin-left: 35px;
+}
+.paragraph{
+    width: 350px;
+    height: 350px;
+}

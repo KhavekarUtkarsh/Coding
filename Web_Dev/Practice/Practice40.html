@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Interaction using Alert, Prompt & Confirm</title>
+    <script>
+        //Alert in in-browser JS 
+
+        alert("This is Secured!");
+
+        // let result=alert("This is secured!");    // It doesn't return any value
+        // console.log(result);
+
+        // Prompt in in-browser JS
+
+        let name=prompt("What is you name?","Guest"); // Here the second string is the default value. If we are not going to give the default value then NO PROBLLEM
+        console.log(name);
+
+        // Confirm in in-browser JS
+
+        let deletePost= confirm("Do you want to delete the Post?");
+        console.log(deletePost);
+        if(deletePost){
+            //Code to delete the post
+            console.log("Your post has been deleted sucessfully!");
+        }
+        else{
+            // Code to cancel the deletetion of the post
+            console.log("Your post hasn't deleted!");
+        }
+
+
+
+
+        // Just for Practice solve this
+        // Q-Display a message by checking the age is above 18 or below 18 and tell them as you can enter the website or not
+
+        // alert("This is secured Website!");
+        // let age=prompt("Enter your age");
+        // if(age>=18){
+        //     console.log("You can visit the Website!");
+        //     alert("You can visit the Website!");
+        // }
+        // else{
+        //     console.log("You can't visit the Website!");
+        //     alert("You can't visit the Website!");
+        // }
+    </script>
+</head>
+<body>
+    <div class="container">
+        This is a container
+    </div>
+</body>
+</html>

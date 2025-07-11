@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">Easy JS</div>
+    <script>
+        let myVar1=1;
+        let myVar2="string";
+        let myVar4=undefined;
+        let myVar5=true;
+
+        //Above are all the primitive values
+
+        //Object in JS
+        
+        let employee={
+            name:"UK",
+            salary:"100000",
+            channel:"UK BOSS",
+        }
+        console.log(employee);
+
+        //Array in JS
+
+        let names=[1,2,"UK",undefined];
+        console.log(names);
+        console.log(names[0]);
+
+        let name=new Array(1,2,3,"UK"); //In this way we can also create the array(By creating Object)
+        console.log(name);
+        console.log(name.length);  //To find the length of array
+        
+        
+        let name1= new Array(10,3 ,2 ,1 ,"UK");
+        console.log(name1.length);  //To find the length of array
+        name1=name1.sort();
+        console.log(name1);
+
+        name1.push("Hello World!");  //To add element at end of array
+        console.log(name1);
+
+        let nam=new Array(23);  //To create an empty array containing 23 elements
+        console.log(nam);
+    </script>
+</body>
+</html>

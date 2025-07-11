@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <div class="container">
+        This is tutorial about loops
+    </div>
+    <script>
+        console.log("This is tutorial 41");
+
+        //Simple "for" loop
+
+        // let i=0;
+        // for(i=0;i<3;i++){
+        //     console.log(i);
+        // }
+
+        // But we use mostly for loop to iterate- Array
+
+        // let friends=["Somesh","Rushikesh","Sanskar","Arjun"];
+        // for(let i=0;i<friends.length;i++){
+        //     console.log("Hello "+friends[i]);
+        // }
+
+        // But we can write this with another simple way
+
+        // let friends=["Somesh","Rushikesh","Sanskar","Arjun"];
+        // friends.forEach(function f(element){
+        //     console.log("Hello "+ element);
+        // });
+
+        // We can make this even more simple by using "for of" loop
+
+        // let friends=["Somesh","Rushi","Sanskar","Arjun"];
+        // for(element of friends){
+        //     console.log("Hello "+element+" Welcome Back!");
+        // }
+
+
+        // Now if we have to do ths for object then we can use "for in" loop
+
+        // let employee={
+        //     name: "UK",
+        //     salary:100000,
+        //     channel:"Uk Official"
+        // }
+        // for(key in employee){
+        //     console.log(`The ${key} of employee is ${employee[key]}`);  //Here we use "for in" loop to access every key in employee object and also we used (``)-Back Ticks
+        // }
+
+        // "While" Loop
+
+        // let i=0;
+        // while(i<4){
+        //     console.log(`${i} is less than 4`);
+        //     i++;
+        // }
+
+        // "do-while" loop
+        let j=34;
+        do{
+            console.log(`${j} is less than 4 and we are inside "do-while" loop`);
+            j++;
+        }while(j<4);
+    </script>
+</body>
+</html>

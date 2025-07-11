@@ -1,0 +1,142 @@
+/* CSS Reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Navigation Bar */
+
+#navbar{
+    display: flex;
+    /* border: 2px solid red; */
+    height: 92px;
+    /* justify-content: space-between; */
+}
+#navbar img{
+    height: 90px;
+    /* border: 2px solid green; */
+}
+#navbar ul{
+    display: flex;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    justify-content: center;
+}
+#navbar ul li{
+    list-style: none;
+    margin: 10px;
+    /* border: 2px solid purple; */
+    /* padding: 5px; */
+}
+#navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+/* #navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    
+} */
+#searchBox{
+    /* border: 2px solid orange; */
+    margin-left: auto;
+    padding: 32px 125px;
+}
+#searchBox input{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#navbar ul li a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 3px;
+}
+
+/* Utility Ckasses */
+
+.heading{
+    font-family:'Times New Roman', Times, serif;
+}
+.center{
+    text-align: center;
+}
+.PARA{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+    text-decoration: underline;
+}
+.para{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+.image{
+    height: 150px;
+    padding-left: 20px;
+}
+.section{
+    /* border: 2px solid orange; */
+    margin:0px 10px;
+}
+/* Section: sec-1 */
+
+#sec-1{
+    /* border: 2px solid aquamarine; */
+    margin: 100px 115px;
+}
+#sec-1 h1{
+    font-size: 50px;
+}
+#sec-1 p{
+    margin: 60px 0px;
+    text-align:center;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+}
+#sec-1::before{
+    content: "";
+    background: url(IMG-6/bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 58%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.8;
+}
+hr{
+    border: 2px solid black;
+}
+
+/* Section: sec-2 */
+
+
+#sec-2 h2{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.box-1{
+    border: 3px solid black;
+    height: 380px;
+    width:330px;
+    margin: auto;
+    border-radius: 15px;
+}
+.box{
+    display: flex;
+    padding: 50px;
+}
+.box-1:hover{
+    color: white;
+    background-color:darkcyan;
+}

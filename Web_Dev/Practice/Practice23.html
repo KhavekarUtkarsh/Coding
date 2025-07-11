@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+        h1{
+            font-size: bold;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        input{
+            display: block;
+            width: 30%;
+            margin: auto;
+        }
+        li{
+            list-style: none;
+        }
+        /* input[type='text']{
+            border: 2px solid red;
+        } */
+        /* a[target]{
+            color: burlywood;
+        } */
+        /* a[target='_self']{
+            color: pink;
+        } */
+        
+        /* li:nth-child(3){
+            color: aqua;
+        } */
+        /* li:nth-child(3n+0){
+            color: aqua;
+        } */
+        /* li:nth-child(3n+4){
+            color: aqua;
+        } */
+        /* li:nth-child(odd){
+            color: aqua;
+        } */
+        /* li:nth-child(even){
+            color: aqua;
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+        <a href="https://google.com" target="_blank">Go to Google</a>
+        <a href="https://facebook.com" target="_self">Go to Facebook</a>
+        <form action="" class="form-control">
+            <input type="text" placeholder="Enter your Name">
+            <input type="password" placeholder="Enter your Password">
+            <input type="email" placeholder="Enter your E-mail">
+            <input type="submit" placeholder="Submit">
+        </form>
+        <ul>
+            <li class="list" id="list-1">list-1</li>
+            <li class="list" id="list-2">list-2</li>
+            <li class="list" id="list-3">list-3</li>
+            <li class="list" id="list-4">list-4</li>
+            <li class="list" id="list-5">list-5</li>
+            <li class="list" id="list-6">list-6</li>
+            <li class="list" id="list-7">list-7</li>
+            <li class="list" id="list-8">list-8</li>
+            <li class="list" id="list-9">list-9</li>
+            <li class="list" id="list-10">list-10</li>
+        </ul>
+    </div>
+</body>
+</html>

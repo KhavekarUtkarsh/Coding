@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Functions</title>
+</head>
+<body>
+    <script>
+        var str="This is a string";
+        console.log(str);
+        var position=str.indexOf("is"); //This gives first occurance of the "is"
+        console.log(position);
+
+        position=str.lastIndexOf("is"); //Here we can use "position" without "var" because it is already specified
+        console.log(position);
+
+        var substr1=str.slice(1,6);
+        console.log(substr1);
+
+        var substr1=str.substring(1,6);
+        console.log(substr1);
+
+        var substr1=str.substr(1,3);
+        console.log(substr1);
+
+        var replaced=str.replace("string","paper");
+        console.log(str);
+        console.log(replaced); //Here it will not change the "str" string but it creates the new string as "replaced"
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+
+        var newString=str.concat(" New String");
+        console.log(newString);
+
+        var nstr="    this is      a string     ";
+        console.log(nstr);
+        console.log(nstr.trim()); //It will remove the white spaces from start and end only and not inbetween
+
+        var char3=str.charAt(2);
+        console.log(char3); //This will give the character at the third position
+
+        var char3=str.charCodeAt(2);
+        console.log(char3); //This will give the character code of that character specified by the index
+    </script>
+</body>
+</html>

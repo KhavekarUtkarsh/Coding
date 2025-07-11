@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            display: none;
+        }
+        @media only screen and (max-width:300px){
+            #box-1{
+                display: block;
+                background-color: red;
+            }
+        }
+        @media only screen and (min-width:300px) and (max-width:500px){
+            #box-2{
+                display: block;
+                background-color:green;
+            }
+        }
+        @media only screen and (min-width: 500px) and (max-width:700px){
+            #box-3{
+                display:block;
+                background-color: aqua;
+                color: black;
+            }
+        }
+        @media only screen and (min-width:700px){
+            #box-4{
+                display: block;
+                background-color: burlywood;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">I am First Box</div>
+    <div class="box" id="box-2">I am Second Box</div>
+    <div class="box" id="box-3">I am Third Box</div>
+    <div class="box" id="box-4">I am Fourth Box</div>
+</body>
+</html>

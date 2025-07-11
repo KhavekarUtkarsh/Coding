@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box and Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            border: 2px solid red;
+            margin: 10px;
+            padding: 10px;
+            text-align: justify;
+            background-color: burlywood;
+
+        /* Shadow giving to the outside of the Box */
+
+            /* box-shadow: 10px 10px green; */
+            /* box-shadow: -10px -10px green; */
+            /* box-shadow: -10px -10px 5px green; */
+            /* box-shadow: 10px 10px 5px 5px green; */
+
+            /* Box shadow using RGBA */
+
+            /* box-shadow: 10px 10px 10px 5px rgba(3, 5, 5, 0.63); */
+
+        /* Shadow giving to the inside of the Box */
+
+            /* box-shadow: inset 10px 10px blue; */
+            /* box-shadow: inset -10px -10px blue; */
+
+            /* For multiple Box Shadow */
+
+            /* box-shadow: 5px 5px yellow, 10px 10px pink; */
+            /* box-shadow: 5px 5px yellow, -10px -10px pink; */
+            /* box-shadow: -5px -5px yellow, 10px 10px pink; */
+            /* box-shadow: -5px -5px yellow, -10px -10px pink; */
+
+        }
+        .card h2{
+
+            /* Text Shadow */
+
+            text-shadow: -3px -2px 2px white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>This is Card 1</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime totam dicta, optio et laboriosam neque sapiente odit debitis recusandae. Adipisci accusamus veritatis facilis delectus tempore quo animi et alias autem quas beatae, quod consectetur amet quidem aliquam hic! Deleniti ex culpa doloremque necessitatibus.</p>
+        </div>
+        <div class="card">
+            <h2>This is Card 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laudantium reiciendis error totam saepe nihil hic, vitae ducimus dolorum pariatur minus libero consequuntur rerum officiis autem eum sed, alias adipisci accusamus. Consequatur error quidem, nulla consectetur suscipit hic consequuntur minima ipsam natus tempora!</p>
+        </div>
+        <div class="card">
+            <h2>This is Card 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat ratione laboriosam animi cumque commodi expedita hic laborum, officia, dolore alias aliquam facere odio pariatur quos saepe corporis eligendi natus possimus rerum harum quisquam vitae laudantium exercitationem voluptate? Vel, accusantium sint. Aperiam, nisi minima?</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animation</title>
+</head>
+<style>
+    .container{
+        background-color: pink;
+    }
+    .box{
+        background-color: aqua;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        position: relative;
+        /* animation-name: UK; */
+        animation-name: UK1;
+        animation-duration: 4s;
+        animation-iteration-count: 1;
+        /* animation-fill-mode: forwards; */
+        /* animation-fill-mode: backwards; */
+        /* animation-timing-function: ease-in; */
+        /* animation-timing-function: ease-out; */
+        /* animation-timing-function: ease-in-out; */
+        /* animation-delay: 2s; */
+        /* animation-direction: reverse; */
+
+
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode; */
+        /* animation: UK 2s ease-in 2s 3 backwards; */
+
+    }
+    @keyframes UK1{
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 100px;
+            left: 0px;
+        }
+        50%{
+            top: 100px;
+            left: 200px;
+        }
+        75%{
+            top:0px;
+            left: 200px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+    }
+    @keyframes UK {
+        from{
+            width: 200px;
+        }
+        to{
+            width: 1400px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

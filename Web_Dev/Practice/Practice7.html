@@ -1,0 +1,30 @@
+<!-- Internal CSS takes higher priority then Inline CSS -->
+
+<!-- Here the last type of CSS takes higher priority than it's previous one.
+Means if you link CSS before the <style> block in head then <style> block takes the priority and vice versa.-->
+
+<!-- But if you want to give priority to the the first one then insert  "!important" -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <!-- Internal CSS -->
+    
+    <style>
+        p{
+            color: brown;
+            background-color: orange !important;
+        }
+    </style>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="practice7.css">
+</head>
+<body>
+    <h3>This is CSS Tutorial</h3>
+    <!-- Inline CSS -->
+    <p style="color: red;">This tutorial will teach you everything you need to know.</p>
+</body>
+</html>

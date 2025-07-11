@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid-5</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+        }
+        .box{
+            border: 2px solid black;
+            background-color: cyan;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">Home About Contact Us</div>
+        <div id="section" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nostrum, nesciunt animi eveniet atque voluptates repellendus magni ipsum quod praesentium laborum cupiditate corrupti qui blanditiis nobis assumenda vitae totam sapiente aperiam nemo? Quam fugiat, esse perferendis aperiam nisi ex quisquam quis nobis recusandae libero. Doloribus molestias, commodi est eius deserunt architecto, ullam culpa exercitationem iusto esse quam quia error. Aliquid debitis eaque nisi rerum natus. Sint eligendi corrupti, officiis voluptate voluptatum veniam illo nesciunt eveniet quam harum accusamus obcaecati! Rerum quis ut sit, asperiores numquam natus atque cum animi beatae nobis vel, ad placeat neque provident aperiam itaque? Reprehenderit, architecto quidem. Dolore perferendis illum eveniet soluta cumque corrupti possimus error!Dolore, sunt laboriosam neque iusto modi fuga? Expedita voluptas consequatur dicta, odit exercitationem vero? A ea, saepe rem repellendus praesentium tempore earum quasi esse labore, adipisci, vitae officia perferendis incidunt eligendi alias dolorem deleniti. Rem nobis pariatur sunt provident aut soluta repellendus exercitationem, velit, assumenda cupiditate voluptates modi. Et veniam praesentium optio! Dolor necessitatibus minima nesciunt, porro deleniti voluptatibus ut consequatur doloremque vero ipsum laborum officiis quas quod fugiat deserunt repellendus veritatis quasi impedit recusandae expedita odit dolorum quo corporis tempore? Aliquid dignissimos excepturi eos alias, dolor deleniti et accusantium!</div>
+        <div id="aside" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci vel a natus temporibus aperiam, facere quos cupiditate, voluptate officia beatae in exercitationem veritatis placeat ab. Rem facere vero enim aliquid quis quisquam beatae quos tempore, eligendi quam autem consectetur dignissimos. Ipsum natus earum in dolorum culpa, voluptates placeat harum dolorem accusantium porro soluta possimus reiciendis numquam aperiam quos iure officiis architecto enim illum similique explicabo fugiat fuga deser Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci repellendus deleniti obcaecati ipsum perspiciatis provident esse laboriosam, quidem reprehenderit quas repudiandae commodi aspernatur dolore? Accusantium quidem iure, dolorum minima itaque eius numquam suscipit explicabo soluta porro, voluptate quos fugit. Aliquam fuga impedit tempora quidem consequatur quod tenetur velit possimus, nisi dicta qui quisquam voluptatem saepe magnam ipsam, temporibus, fugit excepturi perspiciatis fugiat odio eos cumque obcaecati! Modi qui eos cupiditate repellendus assumenda odit ut eum, eveniet ipsum, harum rem repudiandae aliquid provident ad voluptatem, ullam laudantium beatae perferendis deleniti hic veritatis laborum incidunt rerum quas. Culpa ea cumque ratione deleniti. unt! Eos, iste iure, quo minus obcaecati perferendis expedita ab vero consequuntur quasi ex labore necessitatibus accusantium voluptatibus fugit, unde id tenetur? Repudiandae ex sapiente nostrum cupiditate soluta nemo adipisci reiciendis earum nulla.</div>
+        <div id="footer" class="box">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti sunt dolore nostrum tempore similique neque officia ea eius quisquam facilis.</div>
+    </div>
+</body>
+</html>

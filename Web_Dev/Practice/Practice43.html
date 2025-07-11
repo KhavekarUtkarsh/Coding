@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <style>
+        #btn{
+            border: 2px solid black;
+            padding: 3px;
+            border-radius: 7px;
+            cursor: pointer;
+            background-color: burlywood;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Browser Events: 
+    
+        Mouse Events:   click
+                        contextmenu
+                        mouseover/mouseout
+                        mousedown/mouseup
+                        mousemove
+        Form Events:    submit
+                        focus
+
+        DOMContentLoaded
+
+        transitioned -->
+        <div class="container">
+            <h1>This is my Heading</h1>
+            <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident repellendus magnam numquam suscipit quod accusantium laborum tempore voluptate architecto odio maiores eligendi delectus, at aliquam cumque! Accusamus quisquam iste eveniet ipsum in repellat inventore esse fugit saepe sed, magnam rerum adipisci ab voluptatum optio culpa? Nemo laborum aliquid voluptatum qui tempore vitae omnis officia eum, obcaecati laboriosam. Est, veritatis beatae voluptate accusantium dolor repellat a ut commodi voluptas consectetur cumque modi ad incidunt, consequatur iste perferendis labore recusandae. Excepturi iste nostrum alias distinctio quod ad fuga animi quaerat impedit repudiandae cum dolor in, sapiente numquam fugiat. Doloremque aut sed similique voluptas, animi eum corrupti ratione nostrum possimus repudiandae earum natus assumenda nisi provident delectus reiciendis inventore non culpa labore nemo dicta perferendis? Aut atque odit at dolorem nulla magni, voluptates, placeat deleniti sit, repellat porro corrupti fugit ipsum. Voluptatum delectus atque accusamus ad fuga commodi impedit accusantium ea aut temporibus. Soluta placeat, repellat asperiores sunt pariatur, vel optio totam repellendus nisi consectetur commodi perferendis exercitationem recusandae eveniet odit quam enim iusto obcaecati voluptatibus hic porro nulla animi aut illo? Commodi beatae minus sit. Repellat neque optio architecto assumenda accusantium enim unde aut, totam rerum quo! Molestiae vitae libero reprehenderit eaque et dolores odit aut voluptates, deleniti totam fugiat voluptate sequi rerum eos? Reiciendis nulla molestiae blanditiis ex accusamus consectetur accusantium velit, nemo ipsum saepe inventore quibusdam voluptatem, a neque magnam delectus aut. Dolores.</p>
+        </div>
+        <button id="btn" onclick="toggleHide()">Show/Hide</button>
+        <script>
+            
+            function toggleHide(){
+                // let btn= document.getElementById('btn');
+                let para= document.getElementById('para');  // If you don't write this then there is no problem. But for good practice you should write it.
+                if(para.style.display!='none'){
+                    para.style.display='none';
+                }
+                else{
+                    para.style.display='block';
+                }
+            }
+
+            let para= document.getElementById('para');
+            para.addEventListener('mouseover', function run(){
+                console.log("Mouse is Inside Paragraph");
+            });
+            para.addEventListener('mouseout', function run(){
+                console.log("Mouse is not Inside Paragraph");
+            });
+        </script>
+</body>
+</html>

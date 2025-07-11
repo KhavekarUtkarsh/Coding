@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width: 900px;
+            border: 5px solid violet;
+            border-radius: 20px;
+            margin: auto;
+            padding: 12px;
+            background-color: aqua;
+        }
+        .item{
+            border: 3px solid red;
+            border-radius: 20px;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(246, 215, 138);
+        }
+        #fruit{
+            float: left;
+            width: 49%;
+        }
+        #computer{
+            float: left;
+            width: 49%;
+        }
+        #stationary{
+            clear: both;
+            width: 99%;
+        }
+        p{
+            text-align: justify;
+        }
+        h1{
+            text-align: center;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruit Section</h3>
+            <p id="fruitPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id tempora quo exercitationem accusantium facere nulla voluptatum vel neque dolorem. Laboriosam vero perferendis beatae vitae iusto veniam reprehenderit quibusdam voluptas! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi reiciendis voluptas iste mollitia nam. Quod, cumque, aspernatur quis debitis dolor eaque eligendi officia aliquid nulla minus nihil fugit ducimus explicabo.</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer Section</h3>
+            <p id="compuetrPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id tempora quo exercitationem accusantium facere nulla voluptatum vel neque dolorem. Laboriosam vero perferendis beatae vitae iusto veniam reprehenderit quibusdam voluptas! Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repellendus officia modi maiores ex, vitae labore, assumenda quis, sint aperiam numquam libero quod vero fugiat nemo magnam eum alias. Molestiae?</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary Section</h3>
+            <p id="stationaryPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id tempora quo exercitationem accusantium facere nulla voluptatum vel neque dolorem. Laboriosam vero perferendis beatae vitae iusto veniam reprehenderit quibusdam voluptas!</p>
+        </div>
+        <div id="glasses" class="item">
+            <h3>Glasses Section</h3>
+            <p id="glassesPara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam id tempora quo exercitationem accusantium facere nulla voluptatum vel neque dolorem. Laboriosam vero perferendis beatae vitae iusto veniam reprehenderit quibusdam voluptas!</p>
+        </div>
+    </div>
+</body>
+</html>

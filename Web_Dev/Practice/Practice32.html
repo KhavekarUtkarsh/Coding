@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid + Media Query</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'nav nav nav nav'
+            'sec sec sec asi'
+            'foot foot foot foot';
+        }
+        @media only screen and (max-width:300px) {
+            body{
+                background-color: red;
+            }
+            .container{
+                grid-template-areas: 
+                'nav nav nav nav'
+                'sec sec sec sec'
+                'asi asi asi asi'
+                'foot foot foot foot';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:300px) and ( max-width:500px) {
+            body{
+                background-color: yellow;
+            }
+            .container{
+                grid-template-areas: 
+                'nav nav nav nav'
+                'sec sec sec sec'
+                'asi asi asi asi'
+                'foot foot foot foot';
+            }
+            aside{
+                display: none;
+            }
+            span{
+                display: block;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width:500px) and (max-width:700px) {
+            body{
+                background-color: orange;
+            }
+            .container{
+                grid-template-areas: 
+                'nav nav nav nav'
+                'sec sec sec sec'
+                'asi asi asi asi'
+                'foot foot foot foot';
+            }
+        }
+        @media only screen and (min-width:700px) {
+            body{
+                background-color:pink;
+            }
+        }
+        .bdr{
+            border: 2px solid black;
+            padding: 5px;
+            background-color: burlywood;
+        }
+        nav{
+            grid-area: nav;
+        }
+        section{
+            grid-area: sec;
+        }
+        aside{
+            grid-area: asi;
+        }
+        footer{
+            text-align: center;
+            grid-area: foot;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <sapn>Home</sapn>
+            <sapn>About us</sapn>
+            <sapn>Services</sapn>
+            <sapn>Know more</sapn>
+        </nav>
+        <section class="bdr">
+            <h2>Learn Web Dev</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error tempora saepe voluptas dicta in tenetur iste delectus vero, quis molestias laborum, quia, voluptates hic porro? Minima, voluptatum excepturi pariatur iure eligendi assumenda placeat alias quod expedita ab cupiditate. Quibusdam, repellendus aliquid. Assumenda, dolorum odit sequi modi aut consectetur necessitatibus, ducimus accusantium laudantium eveniet aperiam harum iste facere. Deleniti modi labore enim. Magni a natus voluptate, provident nobis cum assumenda laudantium pariatur, ad quasi architecto saepe voluptatem asperiores, animi sit ex omnis eos? Officia quibusdam, iste pariatur velit dolore facilis a ipsa officiis error eum odit et! Amet assumenda et, voluptatum pariatur soluta nostrum recusandae ducimus dolorum voluptatem laboriosam inventore quos totam ullam, culpa optio reprehenderit excepturi, est voluptatibus? Architecto ipsum error repellendus ea voluptas exercitationem velit consequuntur accusantium omnis quos iure itaque ducimus, nisi minima, adipisci nobis laborum maiores fuga facilis sapiente? Eaque atque tempora, fugit id sapiente totam hic nostrum quas repellendus veniam magnam minus consequuntur molestias quia, accusantium dolore! Doloribus eos praesentium fugit corporis omnis, quia aliquam quo nesciunt error deleniti porro architecto dignissimos modi asperiores ab quos quas debitis quisquam nihil? Unde expedita, rerum inventore itaque et minus iure asperiores, porro excepturi eos, error similique ut explicabo.</p>
+        </section>
+        <aside class="bdr">
+            <h1>Join With Us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright UK Boss</footer>
+</body>
+</html>

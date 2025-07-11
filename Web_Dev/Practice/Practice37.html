@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Scope and Conditionals</title>
+</head>
+<body>
+    <div>  <!--   div>ul>li{Item-$}*7   -->
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+        </ul>
+    </div>
+    <script>
+        var string1="HI";
+        var string1="HELLO";
+        console.log(string1);
+
+        let a="Hi"; // The use of "var" may change the values of variables. To overcome this problem use always "let" onwards to declare variables
+        {
+            let a="Hello";
+            console.log(a);
+        }
+        console.log(a);
+
+        const b="this can't be changed";  //This is the type which can't be changed
+        console.log(b);
+        // b="I want this";  This will not execute
+
+        let age=2;
+        if(age>18){
+            console.log("You can drink Cold Drink");
+        }
+        else if(age==2){
+            console.log("You can drink milk");
+        }
+        else{
+            console.log("You can drink water");
+        }
+
+        const cup=6;
+        switch(cup){
+            case 2: console.log("The value is 2");
+                    break;
+            case 4: console.log("The value is 4");
+                    break;
+            case 6: console.log("The value is 6");
+                    break;
+            case 8: console.log("The value is 8");
+                    break;
+            case 10: console.log("The value is 10");
+                    break;
+            default: console.log("Wrong Input");
+                    break;
+        }
+    </script>
+</body>
+</html>

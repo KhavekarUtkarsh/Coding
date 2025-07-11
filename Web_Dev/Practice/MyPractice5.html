@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Practice 5</title>
+    <style>
+        .container{
+            display: grid;
+            border: 2px solid black;
+            background-color: aqua;
+            grid-template-areas: 
+            'header header header header'
+            'section section aside aside'
+            'footer footer footer footer';
+            grid-gap: 1rem 2rem;
+        }
+        li{
+            display: inline-block;
+            padding: 0px 10px;
+            font-family: Georgia, Times, 'Times New Roman', serif;
+            list-style: none;
+            cursor: pointer;
+        }
+        #header{
+            grid-area: header;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+            grid-area: aside;
+        }
+        #footer{
+            grid-area: footer;
+        }
+        .box{
+            border: 2px solid red;
+            background-color: burlywood;
+        }
+    </style>
+    <script>
+        alert("This is Secured");
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </header>
+        <div id="section" class="box">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni ducimus possimus adipisci nam cupiditate corrupti nemo iure, recusandae facere eligendi, vero minima natus obcaecati facilis tenetur assumenda dolorum, ratione quis ipsum dignissimos perferendis tempora quidem laudantium doloribus. Ex quas mollitia ducimus tenetur! Suscipit numquam, at saepe nam facilis maxime? Doloribus dolorem sequi quisquam enim asperiores sit, sed eaque eligendi, voluptatem quod similique quasi praesentium, tempora nulla nihil veniam accusantium? Voluptates, fugiat, harum doloribus tenetur necessitatibus vero dolorem praesentium ullam illo consectetur expedita aliquid animi neque numquam amet pariatur saepe sequi dolores quo ab autem eaque modi sit a. Debitis, necessitatibus.</div>
+        <div id="aside" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias molestiae repellendus iusto nesciunt dolore similique amet asperiores vero deleniti, enim deserunt debitis nulla dolorum tenetur ad. Quos voluptate numquam voluptatum placeat ipsam delectus nulla quaerat nihil et neque sapiente eveniet odit quidem, eum adipisci aliquid ducimus. Eligendi, corporis quaerat nesciunt reiciendis accusamus ducimus sit quos quae. Nesciunt voluptates, expedita voluptas placeat adipisci sapiente sunt, excepturi cumque porro voluptatibus vel pariatur necessitatibus aliquid, libero sequi beatae. Maxime molestias fugit, id corrupti ab, aspernatur alias minus aliquam beatae illum dolorum, rem esse suscipit! Recusandae sapiente similique sed provident harum? Porro alias velit adipisci, eaque ex incidunt distinctio fuga placeat eos cumque minima quo ratione tenetur, a eius numquam quae nihil in dolore nulla fugit vero.</div>
+        <div id="footer" class="box">This is Made By UK</div>
+    </div>
+</body>
+</html>

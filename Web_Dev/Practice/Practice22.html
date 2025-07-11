@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about CSS Selector</title>
+    <style>
+        h1{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: bold;
+        }
+        /* div p{
+            background-color: rgb(114, 114, 180);
+            color:black;
+            font-size: bold;
+        } */
+        /* div>p{
+            background-color: green;
+            color: aliceblue;
+        } */
+        div+p{
+            background-color: pink;
+            color: rgb(3, 64, 3);
+        }
+    </style>
+</head>
+<body>
+    <h1>This is heading</h1>
+    <div class="container">
+        <div class="Container">
+            <ul>
+                <li><p>This is paragraph inside ul</p></li>
+            </ul>
+            <p>This is paragraph inside second div</p>
+        </div>
+        <p>This is paragraph inside first div</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

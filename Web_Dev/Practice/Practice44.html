@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS- SetTimeOut and ClearTimeout</title>
+</head>
+<body>
+    <div class="container">
+        Time now is- <span id="time"></span>
+    </div>
+    <script>
+        // function greet(){
+        //     console.log("Hello Good Morning "+name);
+        // }
+        // greet();
+
+        // setTimeout(greet, 5000); 
+
+        // // This allows us to run a function once after some interval of time
+        // Here 1st argument is function name and 2nd is the time interval in milliseconds
+
+        // function greet(name){
+        //     console.log("Hello Good Morning "+name);
+        // }
+        // setTimeout(greet,5000,"UK"); // If the function of this type then you can pass the 3rd argument also
+
+        function greet(name,takeCare){
+            console.log("Hello Good Morning "+name+" "+takeCare);
+        }
+        // setTimeout(greet,5000,"UK","Take Care"); // In this way we can pass multiple arguments
+
+
+        // NOTE
+        // setTimeout(greet(),5000); // This is wrong because we can't call the function inside setTimeout
+
+
+        // To clear the timeout we use "clearTimeout" function as follows-
+
+        // timeout=setTimeout(greet,5000,"UK","Take Care"); 
+        // console.log(timeout); // This will give unique id of the timeout here it is 1
+        // clearTimeout(timeout); // This will clear the "setTimeout"
+
+        // setInterval(greet,2000,"UK","Take Flight"); // This is same as "setTimeout". But the difference is here it will go on printing repeadly after 2s in the console
+
+        // intervalID=setInterval(greet,2000,"uk","Take Hope");
+        // console.log(intervalID); // This also returns a unique ID
+        // clearInterval(intervalID); // This is used to stop/ clear the "setInterval"
+
+
+
+        // To display "time" we can us efollowing-
+
+        function dispTime(){
+            time=new Date();
+            console.log("time");
+            document.getElementById("time").innerHTML=time;
+        }
+        setInterval(dispTime,1000);
+    </script>
+</body>
+</html>
