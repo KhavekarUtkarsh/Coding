@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+/* This allows to change the color or anythin after it is selected for Ex. to COPY */
+::selection{ 
+    background-color: grey;
+    color: white;
+}
+
+
 hr{
     border: 2px solid black;
 }
@@ -18,6 +25,14 @@ hr{
 
 /* Navigation Bar */
 
+#navbar{   /*To fix the position of Navigation Bar */
+    position: sticky;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    height: 75px;
+    width: 100%;
+}
 #navigation_bar{
     display: flex;
     background-color: black;
@@ -45,8 +60,24 @@ hr{
     border-radius: 5px;
 }
 
+/* Message logo */
+
+.message img{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.message img:hover{
+    transform: scale(1.05);
+}
 /* Search Bar */
 
+#search-box{
+    margin-left: auto;
+}
 #search-box input{
     border: 2px solid burlywood;
     margin: 15px;
@@ -98,6 +129,10 @@ hr{
 .box{
     border: 2px solid red;
     margin: 10px;
+}
+.box:hover{
+    box-shadow: 4px 2px 10px 2px ;
+    transform: scale(1.01);
 }
 .div{
     display: flex;

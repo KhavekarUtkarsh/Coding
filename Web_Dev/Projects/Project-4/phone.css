@@ -1,0 +1,33 @@
+body{
+    background-color: red;
+}
+
+/* Navigation Section */
+
+#navbar{
+    flex-direction: column;
+}
+
+/* Home Section */
+
+#home{
+    height: 300px;
+}
+#home::before{
+    height: 440px;
+    
+}
+
+/* Services section */
+
+#services{
+    flex-direction: column;
+}
+#services .box img{
+    height: 150px;
+    width: 150px;
+}
+.center{
+    justify-content: center;
+    text-align: center;
+}

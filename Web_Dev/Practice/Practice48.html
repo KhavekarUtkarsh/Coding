@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+<body>
+    <div class="container">
+        This is container
+    </div>
+    <script>
+        let jsonObj={
+            name: "UK",
+            channel:"Code along UK",
+            friend:"Somesh",
+            food:"Ladiesfinger"
+        }
+        console.log(jsonObj);
+
+        let myJsonObj=JSON.stringify(jsonObj); // It is used to return the values in String Format
+        console.log(myJsonObj);
+
+        myJsonObj=myJsonObj.replace('UK','PK'); // It is used to replace values
+        console.log(myJsonObj);
+
+        newJsonObj=JSON.parse(myJsonObj); // This is used to convert a Valid String into Object with use of JSON.parse
+        console.log(newJsonObj);
+    </script>
+</body>
+</html>
