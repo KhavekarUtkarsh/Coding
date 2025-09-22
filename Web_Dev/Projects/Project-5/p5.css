@@ -25,14 +25,16 @@ hr{
 
 /* Navigation Bar */
 
-#navbar{   /*To fix the position of Navigation Bar */
+/* #navbar{   To fix the position of Navigation Bar
     position: sticky;
     top: 0;
     margin: 0;
     padding: 0;
     height: 75px;
     width: 100%;
-}
+} */
+
+
 #navigation_bar{
     display: flex;
     background-color: black;
@@ -133,6 +135,7 @@ hr{
 .box:hover{
     box-shadow: 4px 2px 10px 2px ;
     transform: scale(1.01);
+    transition: 0.3s;
 }
 .div{
     display: flex;

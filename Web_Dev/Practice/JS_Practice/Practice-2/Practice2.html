@@ -1,0 +1,33 @@
+
+
+<!-- To find out Factorial of a number using for loop -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of a number</title>
+</head>
+
+<body>
+    <script>
+        let number = prompt('Enter a number ');
+        if (number <= 0) {
+            console.log("Error! We can find factorial");
+        }
+        else {
+            function factorial(num) {
+                let fact = 1;
+                for (let i = 1; i <= num; i++) {
+                    fact = fact * i;
+                }
+                console.log(fact);
+            }
+            factorial(number);
+        }
+    </script>
+</body>
+
+</html>
