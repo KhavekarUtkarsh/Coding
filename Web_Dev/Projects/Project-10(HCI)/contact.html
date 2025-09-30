@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Ordering - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form id="contact-form" onsubmit="showContactPopup(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+    <div id="contact-popup" class="popup-message"></div>
+    <script>
+      function showContactPopup(e) {
+        e.preventDefault();
+        const popup = document.getElementById('contact-popup');
+        popup.textContent = 'We will Contact you soon';
+        popup.style.display = 'block';
+        popup.classList.add('show-popup');
+        setTimeout(()=>{
+          popup.classList.remove('show-popup');
+          popup.style.display = 'none';
+        }, 1800);
+        document.getElementById('contact-form').reset();
+      }
+    </script>
+  </div>
+</body>
+</html>

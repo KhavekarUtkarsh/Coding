@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Ordering - Checkout</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Checkout</h2>
+    <form id="checkout-form" onsubmit="showOrderPopup(event)">
+      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="Phone" required>
+      <select>
+        <option>Cash on Delivery</option>
+        <option>Credit/Debit Card</option>
+        <option>UPI</option>
+      </select>
+      <button type="submit">Place Order</button>
+    </form>
+    <div id="checkout-popup" class="popup-message"></div>
+    <script>
+      function showOrderPopup(e) {
+        e.preventDefault();
+        const popup = document.getElementById('checkout-popup');
+        popup.textContent = 'Order placed successfully!';
+        popup.style.display = 'block';
+        popup.classList.add('show-popup');
+        setTimeout(()=>{
+          popup.classList.remove('show-popup');
+          popup.style.display = 'none';
+        }, 1800);
+        document.getElementById('checkout-form').reset();
+      }
+    </script>
+  </div>
+</body>
+</html>

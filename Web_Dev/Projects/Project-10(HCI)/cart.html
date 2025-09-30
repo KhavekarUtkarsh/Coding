@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Ordering - Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Your Cart</h2>
+    <div class="cart-list" id="cart-list">
+      <!-- Cart items will be rendered here by JS -->
+    </div>
+    <div class="cart-actions">
+      <select id="add-item-select">
+        <option value="Pizza" data-price="250">Pizza - ₹250</option>
+        <option value="Burger" data-price="120">Burger - ₹120</option>
+        <option value="Pasta" data-price="180">Pasta - ₹180</option>
+        <option value="Sandwich" data-price="100">Sandwich - ₹100</option>
+        <option value="French Fries" data-price="80">French Fries - ₹80</option>
+        <option value="Noodles" data-price="150">Noodles - ₹150</option>
+        <option value="Salad" data-price="90">Salad - ₹90</option>
+        <option value="Soup" data-price="110">Soup - ₹110</option>
+        <option value="Ice Cream" data-price="70">Ice Cream - ₹70</option>
+        <option value="Coffee" data-price="60">Coffee - ₹60</option>
+      </select>
+      <button onclick="addItem()">Add Item</button>
+    </div>
+  <div id="cart-popup" class="popup-message"></div>
+    <hr>
+  <h3 id="cart-total">Total: ₹0</h3>
+  </div>
+  <script>
+    function renderCart() {
+      const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      const cartList = document.getElementById('cart-list');
+      cartList.innerHTML = '';
+      cart.forEach((item, idx) => {
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `<span class="item-name">${item.name}</span> <span class="item-price">₹${item.price}</span> <button class="remove-btn" onclick="removeItem(${idx})">Remove</button>`;
+        cartList.appendChild(div);
+      });
+      updateTotal();
+    }
+    function updateTotal() {
+      const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      let total = 0;
+      cart.forEach(item => total += parseInt(item.price));
+      document.getElementById('cart-total').textContent = 'Total: ₹' + total;
+    }
+    function removeItem(idx) {
+      let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      cart.splice(idx, 1);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+      showCartPopup('Item removed successfully!');
+    }
+    function addItem() {
+      const select = document.getElementById('add-item-select');
+      const selected = select.options[select.selectedIndex];
+      const name = selected.value;
+      const price = selected.getAttribute('data-price');
+      let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      cart.push({name, price: parseInt(price)});
+      localStorage.setItem('cart', JSON.stringify(cart));
+      renderCart();
+      showCartPopup('Item added successfully!');
+    }
+    function showCartPopup(msg) {
+      const popup = document.getElementById('cart-popup');
+      popup.textContent = msg;
+      popup.style.display = 'block';
+      popup.classList.add('show-popup');
+      setTimeout(()=>{
+        popup.classList.remove('show-popup');
+        popup.style.display='none';
+      }, 1800);
+    }
+    // Render cart on page load
+    renderCart();
+  </script>
+</body>
+</html>

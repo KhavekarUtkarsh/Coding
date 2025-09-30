@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Ordering - Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="checkout.html">Checkout</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Our Menu</h2>
+    <div class="menu-wrapper">
+      <div class="menu-list">
+  <div class="menu-item">
+        <img src="images/pizza.jpg" alt="Pizza">
+        <h3>Pizza - ₹250</h3>
+        <button onclick="addToCart('Pizza', 250)">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+        <img src="images/burger.jpeg" alt="Burger">
+        <h3>Burger - ₹120</h3>
+        <button onclick="addToCart('Burger', 120)">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+        <img src="images/pasta.jpg" alt="Pasta">
+        <h3>Pasta - ₹180</h3>
+        <button onclick="addToCart('Pasta', 180)">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+        <img src="images/sandwitch.jpg" alt="Sandwich">
+        <h3>Sandwich - ₹100</h3>
+        <button onclick="addToCart('Sandwich', 100)">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+        <img src="images/french-fries.jpg" alt="French Fries">
+        <h3>French Fries - ₹80</h3>
+        <button onclick="addToCart('French Fries', 80)">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+        <img src="images/noodles.jpg" alt="Noodles">
+        <h3>Noodles - ₹150</h3>
+        <button onclick="addToCart('Noodles', 150)">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+        <img src="images/salad.jpg" alt="Salad">
+        <h3>Salad - ₹90</h3>
+        <button onclick="addToCart('Salad', 90)">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+        <img src="images/soup.jpg" alt="Soup">
+        <h3>Soup - ₹110</h3>
+        <button onclick="addToCart('Soup', 110)">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+        <img src="images/ice-cream.jpg" alt="Ice Cream">
+        <h3>Ice Cream - ₹70</h3>
+        <button onclick="addToCart('Ice Cream', 70)">Add to Cart</button>
+      </div>
+  <div class="menu-item">
+        <img src="images/coffee.jpg" alt="Coffee">
+        <h3>Coffee - ₹60</h3>
+        <button onclick="addToCart('Coffee', 60)">Add to Cart</button>
+      </div>
+      </div>
+    </div>
+  <div id="menu-popup" class="popup-message"></div>
+  <script>
+    function addToCart(name, price) {
+      let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      cart.push({name, price: parseInt(price)});
+      localStorage.setItem('cart', JSON.stringify(cart));
+      showMenuPopup('Item added successfully!');
+    }
+    function showMenuPopup(msg) {
+      const popup = document.getElementById('menu-popup');
+      popup.textContent = msg;
+      popup.style.display = 'block';
+      popup.classList.add('show-popup');
+      setTimeout(()=>{
+        popup.classList.remove('show-popup');
+        popup.style.display='none';
+      }, 1800);
+    }
+  </script>
+    </div>
+  </div>
+</body>
+</html>
